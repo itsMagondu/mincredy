@@ -49,6 +49,11 @@ $ pip install -r requirements.txt
 
 ```
 
+Create a superuser
+```bash
+$ python manage.py createsuperuser
+
+```
 \
 Perform all the migrations this is due to jwt authentication that is in use.
 ```bash
@@ -60,6 +65,11 @@ Start your project
 $ python manage.py runserver
 ```
 
+# Running the Tests
+There are eleven test cases that have been written, run the following command to run the provided tests.
+```bash
+$ python manage.py test
+```
 # Examples
 ## Getting a specific user from the json file.
 ### step: 1
