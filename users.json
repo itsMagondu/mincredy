@@ -1,0 +1,100 @@
+{
+    "users": {
+        "user_details": [
+            {
+                "id": 1,
+                "firstname": "David",
+                "lastname": "Mutune",
+                "phone_number": "0741937028",
+                "occupation": "backend_engineer",
+                "nationality": "kenyan",
+                "age": 24,
+                "loan_limit": "ksh.5000"
+            },
+            {
+                "id": 2,
+                "firstname": "Julius",
+                "lastname": "Omondi",
+                "phone_number": "0713434342",
+                "occupation": "teacher",
+                "nationality": "Kenyan",
+                "age": 30,
+                "loan_limit": "ksh.200"
+            },
+            {
+                "id": 3,
+                "firstname": "Ambitious",
+                "lastname": "Johnson",
+                "phone_number": "071323889",
+                "occupation": "Unknown",
+                "nationality": "Unknown",
+                "age": 50,
+                "loan_limit": "ksh.700"
+            },
+            {
+                "id": 3,
+                "firstname": "Ambitious",
+                "lastname": "Johnson",
+                "phone_number": "071323889",
+                "occupation": "Unknown",
+                "nationality": "Unknown",
+                "age": 50,
+                "loan_limit": "ksh.700"
+            },
+            {
+                "id": 5,
+                "firstname": "Nasaba",
+                "lastname": "Bora",
+                "phone_number": "0773434542",
+                "occupation": "writer",
+                "nationality": "Kenyan",
+                "age": 70,
+                "loan_limit": "ksh.2000"
+            }
+        ],
+        "all_loans": [
+            {
+                "id": 1,
+                "user_id": 1,
+                "loan_amount": "ksh.500",
+                "days": "100",
+                "loan_status": "npl"
+            },
+            {
+                "id": 2,
+                "user_id": 3,
+                "loan_amount": "ksh.300",
+                "days": 30,
+                "loan_status": "settled"
+            },
+            {
+                "id": 3,
+                "user_id": 4,
+                "loan_amount": "ksh.150",
+                "days": 45,
+                "loan_status": "watch"
+            },
+            {
+                "id": 4,
+                "user_id": 5,
+                "loan_amount": "ksh.300",
+                "days": 30,
+                "loan_status": "watch"
+            },
+            {
+                "id": 5,
+                "user_id": "6",
+                "loan_amount": "ksh.100",
+                "days": "30",
+                "loan_status": "watch"
+            },
+            {
+                "id": 6,
+                "user_id": 9,
+                "loan_amount": "ksh.600",
+                "days": "100",
+                "loan_status": "npl"
+            }
+        ]
+    }
+}
