@@ -1,5 +1,8 @@
 # INTRODUCTION
-## Minicredy is a simple django API that connects to a json file instead of the normal ORM connection to a database.
+## Minicredy is a simple django API that connects to a json file instead of the normal ORM connection to a database.\
+
+## Authentiation: jwt Authentication
+
 
 
 # DESCRIPTION
@@ -20,11 +23,20 @@
 
 # Getting Started
 
+## Requirements
+1. Django==3.2.9\
+2. django-rest-framework==0.1.0
+3. djangorestframework==3.12.4
+4. djangorestframework-simplejwt==5.0.0
+
+
+## Initial setup
 Clone this repository\
 Navigate to the main folder\
 Create a virtual environment\
 Activate the Virtual environment\
 Install all the requirements\
+Create a users.json file with the format exactly the same as the one attached or just use the attached file.
 \
 The steps are shown below
 
