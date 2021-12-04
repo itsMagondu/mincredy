@@ -5,12 +5,11 @@ charset-normalizer==2.0.8
 Django==3.2.9
 django-rest-framework==0.1.0
 djangorestframework==3.12.4
-djangorestframework-simplejwt==5.0.0
+djangorestframework-simplejwt
 idna==3.3
 pycodestyle==2.8.0
 PyJWT==2.3.0
 pytz==2021.3
-requests==2.26.0
 sqlparse==0.4.2
 toml==0.10.2
 urllib3==1.26.7

@@ -26,7 +26,7 @@
 ## Requirements
 1. Django==3.2.9
 2. djangorestframework==3.12.4
-3. djangorestframework-simplejwt==5.0.0
+3. djangorestframework-simplejwt
 
 
 ## Initial setup
