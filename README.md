@@ -1,5 +1,5 @@
 # INTRODUCTION
-## Minicredy is a simple django API that connects to a json file instead of the normal ORM connection to a database.\
+## Minicredy is a simple django API that connects to a json file instead of the normal ORM connection to a database.
 
 ## Authentiation: jwt Authentication
 
