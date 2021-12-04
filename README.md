@@ -5,21 +5,18 @@
 # DESCRIPTION
 
 ## The following api endpoints are supported.
-
-| Endpoint                 | HTTP Method | CRUD Method | Result              |   |
-|--------------------------|-------------|-------------|---------------------|---|
-| /api/v1/users/           | GET         | READ        | Get all users       |   |
-| /api/v1/users/           | POST        | CREATE      | Add a user          |   |
-| /api/v1/users/<int: id>/ | GET         | READ        | Get a specific user |   |
-| /api/v1/users/<int: id>/ | PUT         | UPDATE      | Edit a user         |   |
-| /api/v1/users/<int: id>/ | DELETE      | DELETE      | Delete a user       |   |
-| /api/v1/loans/           | GET         | READ        | Get all loans       |   |
-| /api/v1/loans/           | POST        | CREATE      | Add a loan          |   |
-| /api/v1/loans/<int: id>/ | GET         | READ        | Get a specific user |   |
-| /api/v1/loans/<int: id>/ | PUT         | UPDATE      | Edit a loan         |   |
-| /api/v1/loans/<int: id>/ | DELETE      | DELETE      | Delete a loan       |   |
-
-
+| Endpoint                 | HTTP Method | CRUD Method | Description         | Return On success              |
+|--------------------------|-------------|-------------|---------------------|--------------------------------|
+| /api/v1/users/           | GET         | READ        | Get all users       | all users                      |
+| /api/v1/users/           | POST        | CREATE      | Add a user          | id of newly added user         |
+| /api/v1/users/<int: id>/ | GET         | READ        | Get a specific user | details of specific user       |
+| /api/v1/users/<int: id>/ | PUT         | UPDATE      | Edit a user         | updated details of edited user |
+| /api/v1/users/<int: id>/ | DELETE      | DELETE      | Delete a user       | message: user deleted          |
+| /api/v1/loans/           | GET         | READ        | Get all loans       | all loans                      |
+| /api/v1/loans/           | POST        | CREATE      | Add a loan          | id of newly added loan         |
+| /api/v1/loans/<int: id>/ | GET         | READ        | Get a specific user | details of specific user       |
+| /api/v1/loans/<int: id>/ | PUT         | UPDATE      | Edit a loan         | updated details of edited loan |
+| /api/v1/loans/<int: id>/ | DELETE      | DELETE      | Delete a loan       | message: loan deleted          |
 
 # Getting Started
 
@@ -73,6 +70,7 @@ $ curl -H 'Accept: application/json' -H "Authorization: Bearer ${BearerToken}" h
 ```
 
 ## Getting all the users from a json file.
+
 Use the previously generated bearer token to make your requests.
 
 ```bash
@@ -85,6 +83,9 @@ curl -H 'Accept: application/json' -H "Authorization: Bearer ${BearerToken}" htt
 
 ```
 ## Adding a user to the json file.
+Note that this method on success will return the id of the newly added
+when making the request set the id to any value but the api will overrite your value to a new id based on existing ids this is due to json limitations unlike if a database system was in use.
+
 ```bash
 curl -X POST -H "Authorization: Bearer ${BearerToken}" -H "Content-Type: application/json" -d '{
     "id": 0,
