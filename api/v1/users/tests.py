@@ -2,7 +2,7 @@ import json
 from rest_framework.test import APITestCase
 from django.contrib.auth.models import User
 from django.test import Client
-
+from minicredy.settings import FILE_PATH
 
 base_url = "http://127.0.0.1:8000/api/v1"
 
@@ -47,7 +47,7 @@ class UserTests(APITestCase):
         response = self.client.get(url, **self.headers)
         #response = requests.get(url, headers=headers)
         self.assertEqual(response.status_code, 200)
-        with open("api/v1/users/users.json", 'r') as jsonfile:
+        with open(FILE_PATH, 'r') as jsonfile:
             json_data = json.loads(jsonfile.read())
         self.assertEqual(json.loads(
             response.content), json_data)
